@@ -1,25 +1,86 @@
-# railway-management-system
-Railway Management System website built as course project in DBMS subject,B.Tech. Used SQL , html ,css and php.
+# Railway Reservation Management System
 
-To install and run on your pc:-
+A simple **Railway Management System** web application built using **PHP, HTML, CSS, and MySQL** as a course/demonstration project.  
+This project demonstrates user and admin functionality for managing train schedules, bookings, user accounts, cancellations, and station management.
 
-1)Sign up and sign in in your sql database.
+---
 
-2)Run railway.sql and save databse. 
+## Table of Contents
 
-3)Add your sql password and user name in indicated portion of db.php file.
+- [ Overview](#-overview)  
+- [ Features](#-features)  
+- [ Built With](#built-with)  
+- [ Installation](#-installation)  
+- [ Project Structure](#-project-structure)  
+- [ Usage](#-usage)  
 
-4)Make sure you have active sql database connection. To do so you can use local server solution software like xampp which is open source and easy to use , or deploy 
-site on a web server connected to sql.
 
-For deploying on local host using xampp:-
+---
 
-a)Navigate to folder where xampp is installed. Inside, there is afolder named htdocs, make a folder named railway there. Path would look something like this-"~\xampp\htdocs\railway\". Place the the project files in this folder.
+## Overview
 
-b)Go to xampp control panel and make sure mysql service is in running state.
+This project implements a **Railway Reservation System** with the following capabilities:
 
-c)Open index.htm in your browser.
+- Admin login and dashboard  
+- Add, edit, delete stations  
+- Insert train schedules and class seat information  
+- User login and ticket booking  
+- View booked tickets & cancellations  
+- Search train schedule and user details
 
-5)Finally run index.htm and enjoy!
+The database schema and seed script (railway.sql) are included in the repository.
 
-Feel free to ask queries if facing any issues in installation. 
+---
+
+## Features
+
+✔ Admin panel for managing users and train data  
+✔ Dynamic train enquiry and schedule display  
+✔ User authentication (login/signup forms)  
+✔ Ticket booking, cancellation & record views  
+✔ MySQL database backend for data storage
+
+---
+
+## Built With
+
+This project uses:
+
+- **PHP** — Core backend scripting  
+- **HTML & CSS** — Frontend UI  
+- **MySQL** — Database engine  
+- **XAMPP / WAMP / LAMP** — Local server environment
+
+---
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/amoghraor/Railway-Reservation.git
+   
+## Project Structure
+
+Railway-Reservation/
+├── admin_login.php
+├── booked.php
+├── cancel.php
+├── db.php
+├── enquiry.php
+├── index.htm
+├── schedule.php
+├── show_trains.php
+├── style.css
+├── railway.sql
+
+## Usage
+
+- Admin logs in via Admin Login page
+- Admin can:
+-- Add or remove trains
+-- Edit station details
+-- View user bookings
+- User can:
+-- Login or signup
+-- Search trains
+-- Book or cancel tickets
